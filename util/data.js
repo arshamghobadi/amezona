@@ -38,7 +38,7 @@ const data = {
     },
     {
       name: 'Free shirt',
-      slug: 'Free ',
+      slug: 'Free shirt',
       category: 'Shirts',
       image: '/images/mohamad-khosravi-4fkUAduhoSY-unsplash.jpg',
       price: 70,
