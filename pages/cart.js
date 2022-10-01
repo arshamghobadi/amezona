@@ -5,8 +5,8 @@ import Layout from '../components/Layout';
 import { Store } from '../util/store';
 import { HiOutlineXCircle } from 'react-icons/hi';
 import { useRouter } from 'next/router';
-
-export default function CartScreen() {
+import dynamic from 'next/dynamic';
+function CartScreen() {
   const { state, dispatch } = useContext(Store);
   const router = useRouter();
   const {
@@ -106,3 +106,5 @@ export default function CartScreen() {
     </Layout>
   );
 }
+
+export default dynamic(() => Promise.resolve(CartScreen), { ssr: false });
